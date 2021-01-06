@@ -1,0 +1,7 @@
+#noteDiv{
+    @include clearfix;
+    min-height: 20rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+}

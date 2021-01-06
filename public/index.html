@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Task Manager</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({ minDate: 0 });
+        });
+    </script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Task Manager</h1>
+            <h2 id="summary"></h2>
+        </div>
+    </header>
+    <section class="main-body">
+        <div class="container">
+            <div>
+                <input type="text" id="searchBar" placeholder="Search Todo" class="input">
+                <select id="sortTasks" class="input">
+                    <option value="byCreated">By Created</option>
+                    <option value="byEdited">By Edited</option>
+                    <option value="byDue">By Due Date</option>
+                    <option value="byAlpha">By Alphabetical</option>
+                </select>
+                <label class="label" for="filterUncompleted">
+                    <input type="checkbox" id="filterUncompleted"> Hide Completed
+                </label>
+            </div>
+            <div id="noteDiv"></div>
+            <div>
+                <form id="newNote">
+                    <input type="text" id="addNote" placeholder="New Todo" required="required" class="input">
+                    <input type="text" id="datepicker" required="required" placeholder="Set Your Due Date"
+                        class="input">
+                    <button id="submitNote" type="submit" class="button">ADD</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Created by Michael</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+        integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+        crossorigin="anonymous">
+        </script>
+    <script src="./js/uuidv4.js"></script>
+    <script src="./js/note-app-functionality.js"></script>
+    <script src="./js/note-app.js"></script>
+</body>
+
+</html>

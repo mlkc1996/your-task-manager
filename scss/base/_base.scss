@@ -1,0 +1,42 @@
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Josefin+Sans",Arial, Helvetica;
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+    background:$color-dark-blue;
+    color:$off-white;
+}
+
+.main-body{
+    flex-grow:1;
+}
+
+footer{
+    height:3rem;
+    padding:$l-size;
+    border-top:1px solid lightgray;
+}
+
+a{
+    &:visited,&:link{
+        color:$off-white;
+        text-decoration: none;
+    }
+}
+
+button{
+    cursor: pointer;
+}
+

@@ -1,0 +1,9 @@
+.button{
+    padding: $d-size;
+    border: none;
+    border-radius: 1000px;
+
+    &--close{
+        line-height: .5;
+    }
+}

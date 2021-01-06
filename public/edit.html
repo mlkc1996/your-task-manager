@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="pageTitle"></title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <script>
+        $(function () {
+            $("#changeDue").datepicker({ minDate: 0 });
+        });
+    </script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 id="taskTitle"></h1>
+            <span id="createdAt"></span>
+            <span id="lastEdited"></span>
+            <span id="due"></span>
+            <a href="./" id="backHome">Home</a>
+        </div>
+    </header>
+    <section class="container">
+        <div>
+            <input type="text" id="taskTitleInput" placeholder="Change Your Todo Name?" class="input">
+            <textarea name="" id="" placeholder="Steps to Success" class="input input--textarea"></textarea>
+            <label for="completed">
+                <input type="checkbox" id="completed"> Completed
+            </label>
+            <label class="label">Due: <input type="text" id="changeDue" required="required" class="input"></label>
+            <button id="removeBtn" class="button">Remove Task</button>
+        </div>
+    </section>
+    <footer>
+        <p>Created by Michael</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+        integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+        crossorigin="anonymous">
+        </script>
+    <script src="./js/note-app-functionality.js"></script>
+    <script src="./js/edit.js"></script>
+</body>
+
+</html>

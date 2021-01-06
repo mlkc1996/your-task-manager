@@ -1,0 +1,16 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "note-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass scss/main.scss public/styles/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

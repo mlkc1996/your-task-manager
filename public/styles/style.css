@@ -1,0 +1,97 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Josefin+Sans",Arial, Helvetica;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #333745;
+  color: #a5afd7; }
+
+.main-body {
+  flex-grow: 1; }
+
+footer {
+  height: 3rem;
+  padding: 3.2rem;
+  border-top: 1px solid lightgray; }
+
+a:visited, a:link {
+  color: #a5afd7;
+  text-decoration: none; }
+
+button {
+  cursor: pointer; }
+
+.button {
+  padding: 1rem;
+  border: none;
+  border-radius: 1000px; }
+  .button--close {
+    line-height: .5; }
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  padding: 3.2rem; }
+
+.task {
+  box-sizing: border-box;
+  margin: 1.2rem;
+  padding: 1.6rem;
+  position: relative;
+  width: 100%; }
+  .task__title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    transition: all .5s; }
+  .task__button {
+    position: absolute;
+    right: 3px;
+    top: 3px; }
+  .task__checkbox {
+    position: absolute;
+    top: 3px;
+    left: 3px; }
+  .task__checkbox:checked + .task__title {
+    color: black; }
+
+.input {
+  background: #20222b;
+  border: none;
+  border-bottom: 3px solid #a5afd7;
+  padding: 1.2rem;
+  color: #a5afd7; }
+  .input--textarea {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    resize: none; }
+
+.noMatch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.label {
+  display: block; }
+
+#noteDiv {
+  min-height: 20rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: relative; }
+  #noteDiv::after {
+    content: "";
+    clear: both;
+    display: table; }
